@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 
 /**
  * @property string $redirect_to
+ * @property boolean $is_active
  */
 class Redirect extends Model
 {
