@@ -5,7 +5,7 @@ use App\Models\Redirect;
 
 Route::get('/{redirect}', function (Redirect $redirect) {
     if($redirect->is_active){
-        return redirect($redirect->redirect_to, 301);
+        return redirect()->away($redirect->redirect_to, 302);
     }
     abort(404);
 })->name('redirect');
