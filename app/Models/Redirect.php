@@ -18,12 +18,6 @@ class Redirect extends Model
         'description',
     ];
 
-
-    public function getRouteKeyName()
-    {
-        return 'alias';
-    }
-
     public static function generateUniqueAlias(): string
     {
         do {
